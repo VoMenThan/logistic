@@ -1,0 +1,61 @@
+footer{
+  background: $color-footer;
+  .title-office{
+    font-size: 50px;
+    padding: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: $color-input-btn;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .box-offices{
+      background: url("../images/img-map.jpg") center no-repeat;
+    background-size: 100% 100%;
+    .item-office{
+      background: $color-header;
+      width: calc(50% - 125px);
+      display: block;
+      float: left;
+      margin: 25px;
+      padding: 20px;
+    }
+    .office-1{
+      margin-left: 100px;
+      border-bottom-right-radius: 50px;
+    }
+    .office-2{
+      margin-right: 100px;
+      border-bottom-left-radius: 50px;
+    }
+    .office-3{
+      margin-left: 100px;
+      border-top-right-radius: 50px;
+    }
+    .office-4{
+      margin-right: 100px;
+      border-top-left-radius: 50px;
+    }
+  }
+
+  .box-copyright{
+    background: $color-footer;
+    position: relative;
+    .text-copyright{
+      background: $color-header;
+      width: 100%;
+      text-align: center;
+      height: 60px;
+      line-height: 60px;
+      margin-top: 10px;
+    }
+    .box-hotline{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 10px 20px;
+      font-size: 20px;
+      background: $color-input-btn;
+    }
+  }
+}

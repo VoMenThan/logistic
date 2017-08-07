@@ -1,0 +1,229 @@
+header{
+  background: $color-header;
+  font-family: $main;
+
+  /*nav top*/
+  nav.header-logistic-page{
+    padding:15px;
+    position: relative;
+
+    /*main menu top*/
+    .main-menu{
+      position: absolute;
+      top: 140%;
+      left: 50%;
+      z-index: 999;
+      @include translate-x(-50%);
+      display: block;
+      width: 681px;
+      a{
+        color: #ffffff;
+        margin: 0 auto;
+        text-align: center;
+        white-space: nowrap;
+        width: auto;
+      }
+      > li{
+        display: block;
+        float: left;
+        position: relative;
+        transition: 0.6s;
+        >a{
+          color: #ffffff;
+          background: transparent;
+          padding: 10px 20px;
+          text-transform: uppercase;
+          border-top: 3px solid #fff;
+          transition: .3s;
+          &:hover, &.active{
+            color: $color-input-btn;
+            border-top: 3px solid $color-input-btn;
+          }
+        }
+      }
+    }
+    ul.main-menu >li:hover ul.sub-menu{
+      display: block;
+    }
+    //sub menu
+    ul.sub-menu{
+      position: absolute;
+      top: 100%;
+      left:0;
+      display: none;
+       >li{
+         position: relative;
+         >a{
+           text-transform: inherit;
+           background: rgba(69, 72, 73, 0.6);
+           display: block;
+           border-top: .1px solid #ffffff;
+           padding: 10px;
+           padding-right: 40px;
+           &:hover{
+             background: $color-input-btn;
+           }
+           &:after{
+             content: '';
+             display: table;
+             width: 10px;
+             height: 10px;
+             position: absolute;
+             right: 10px;
+             top: 33%;
+             background: url(../images/btn-down-icon.png) center no-repeat;
+             background-size: 100%;
+           }
+         }
+         &:first-child{
+           >a{
+             border: none;
+           }
+         }
+       }
+    }
+    ul.sub-menu >li:hover ul.sub-sub-menu{
+      display: block;
+    }
+    //sub sub menu
+    ul.sub-sub-menu{
+      position: absolute;
+      top: 0;
+      left: 100%;
+      display: none;
+      transition: 0.3s;
+      >li{
+        position: relative;
+        >a{
+          background: rgba(194, 197, 202, 0.95);
+          color: #000000;
+          display: block;
+          text-align: left;
+          padding: 10px;
+          padding-right: 40px;
+          border-top: .1px solid #fff;
+          &:hover{
+            color: $color-input-btn;
+          }
+          &:after{
+            content: '';
+            display: table;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            right: 10px;
+            top: 33%;
+            background: url(../images/btn-down-icon.png) center no-repeat;
+            background-size: 100%;
+          }
+        }
+      }
+      li:first-child{
+        > a{
+          border: none;
+        }
+      }
+    }
+    //logo
+    .logo-logistic{
+      a{
+        img{
+          height: 40px;
+        }
+      }
+    }
+
+    //search box
+    .search-box{
+      float: left;
+      .search{
+        input.search-input{
+          height: 40px;
+          width: 200px;
+          padding-left: 20px;
+          float: left;
+          border: none;
+          background: $color-input-btn;
+          color: #ffffff;
+        }
+        *::-webkit-input-placeholder {
+          color: #ffffff;
+        }
+        *:-moz-placeholder {
+          color: #ffffff;
+        }
+        *::-moz-placeholder {
+          color: #ffffff;
+        }
+        *:-ms-input-placeholder {
+          color: #ffffff;
+        }
+        a.btn-search{
+          height: 40px;
+          width: 60px;
+          background: #eaeaea;
+          position: relative;
+          float: left;
+          &:before{
+            content: '';
+            display: table-cell;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 12px;
+            left: -8px;
+            background: #eaeaea;
+            @include rotate(135deg);
+          }
+          .ico-search{
+            width: 100%;
+            height: 100%;
+            display: table;
+            background: url("../images/btn-search-icon.png") center no-repeat;
+            background-size: 30% 50%;
+          }
+
+        }
+      }
+    }
+
+    //select language
+    ul.language-selecter{
+      float: left;
+      padding-left: 30px;
+      li{
+        float: left;
+        margin: 10px 5px;
+        a{
+          width: 30px;
+          height: 20px;
+          display: block;
+        }
+        a.spain{
+          background: url("../images/spain-flag-icon.png") center no-repeat;
+          background-size: 100% 100%;
+        }
+        a.vn{
+          background: url("../images/vn-flag-icon.png") center no-repeat;
+          background-size: 100% 100%;
+        }
+        a.eng{
+          background: url("../images/eng-flag-icon.png") center no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      li:hover, li.active{
+        box-shadow: 0 0 10px #476c82;
+      }
+    }
+
+    a{
+      display: inline-block;
+    }
+
+
+  }//end header logistic page
+  /*slider start*/
+
+  /*slider end*/
+}//end header

@@ -1,0 +1,233 @@
+.detail-page{
+  background: #ffffff;
+  *{
+    color: #000;
+  }
+}
+.link-home{
+  background: $color-input-btn;
+  padding: 10px 20px;
+  a{
+    color: #ffffff;
+    text-transform: uppercase;
+    img{
+      width: 20px;
+      height: 20px;
+    }
+    span{
+      padding-left: 20px;
+      color: #ffffff;
+    }
+  }
+}
+
+.direct-page{
+  padding: 10px;
+  margin-bottom: 50px;
+  .btn-double-down{
+    background: url("../images/arrow-double-down-icon.png") center no-repeat;
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+  }
+  a{
+    color: $color-input-btn;
+    text-transform: uppercase;
+    padding-right: 20px;
+  }
+  .btn-arrow-right{
+    background: url("../images/arrow-right-icon.png") center no-repeat;
+    background-size: 100% 100%;
+    width: 5px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  span{
+    color: #ea6400;
+  }
+}
+
+.container-news{
+  color: #000;
+  padding-left: 90px;
+  .box-head {
+    border-bottom: 1px solid $color-input-btn;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    .img-post {
+      img {
+        width: 100%;
+      }
+    }
+    .text-tutorial {
+      padding: 10px;
+      background: #f7f7f7;
+      .title-news {
+        color: $color-detail;
+        text-transform: uppercase;
+      }
+      .date-news {
+        color: #ea6400;
+        padding-bottom: 20px;
+      }
+      .content-news {
+        color: $color-detail;
+        text-align: justify;
+      }
+    }
+  }
+  p{
+
+  }
+  >img{
+    width: 100%;
+  }
+  .post-by{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+
+/*MENU RIGHT START*/
+.box-menu-right{
+  .box-menu{
+    margin-bottom: 50px;
+    .head-menu{
+      border: 1px solid #f7f7f7;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      height: 35px;
+      a{
+        display: inline-block;
+        background: $color-input-btn;
+        text-align: center;
+        width: 35px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        height: 100%;
+        padding-top: 5px;
+      }
+      i.btn-menu{
+        background: url("../images/menu-icon.png") center no-repeat;
+        background-size: 100%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        padding-top: 5px;
+      }
+      span{
+        margin-left: 20px;
+        text-transform: uppercase;
+        color: $color-input-btn;
+      }
+    }
+    ul.menu-right{
+      >li{
+        border-bottom: .5px solid #000000;
+        >a{
+          color: $color-input-btn;
+          text-transform: uppercase;
+          display: block;
+          padding: 10px;
+          position: relative;
+          &:after{
+            content: "";
+            display: table;
+            width: 15px;
+            height: 15px;
+            background: url("../images/btn-down-green-icon.png") center no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+          }
+        }
+        &:hover{
+          .sub-menu-right{
+            display: block;
+          }
+        }
+      }
+    }
+    .sub-menu-right{
+      width: 80%;
+      margin: auto;
+      display: none;
+      transition: 0.6s;
+      >li{
+        border-bottom: .5px solid #000000;
+        &:last-child{
+          border: none;
+        }
+        a{
+          color: $color-input-btn;
+          text-transform: uppercase;
+          display: block;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+/*MENU RIGHT END*/
+.form-contact{
+  .title-ask-question{
+    background: $color-header;
+    color: #ffffff;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 30px;
+    &:after{
+      content: '';
+      display: table;
+      background: url("../images/btn-down-icon.png") center no-repeat;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    }
+    .status{
+      display: table;
+      width: 10px;
+      height: 10px;
+      background: #06ff41;
+      @include radius(50%);
+      position: absolute;
+      top: 13px;
+      left: 10px;
+    }
+  }
+  .box-newsletter{
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    .social{
+      >a{
+        display: inline-block;
+        padding: 5px;
+        img{
+          width: 30px;
+        }
+      }
+    }
+    input{
+      padding: 10px;
+      margin: 10px 0;
+    }
+    textarea{
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button{
+      border-radius: 0;
+      background: $color-header;
+      color: #ffffff;
+      padding: 5px 20px;
+    }
+  }
+}
+

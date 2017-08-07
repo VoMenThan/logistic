@@ -1,0 +1,41 @@
+#partners{
+  background: #ebebeb;
+  .title-partners{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-bottom: 3px solid #f2772e;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: $color-input-btn;
+    text-transform: uppercase;
+  }
+  .box-logo-partner{
+    width:80%;
+    margin: auto;
+    .item-partner{
+      width: 182px;
+      display: block;
+      float: left;
+      text-align: center;
+      >a{
+        img{
+          max-width: 182px;
+          max-height: 95px;
+        }
+      }
+      a.one{
+        display: block;
+        height: 95px;
+        margin-bottom: 30px;
+      }
+      a.two{
+        display: block;
+        height: 95px;
+      }
+    }
+  }
+}

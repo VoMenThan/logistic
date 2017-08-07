@@ -1,0 +1,13 @@
+*{
+  font-family: $main;
+  font-size: $font-base;
+  color: $color-main;
+}
+@import "header",
+        "tab-panel",
+        "about-us",
+        "choose-us",
+        "event-news",
+        "partners",
+        "footer",
+        "detail";

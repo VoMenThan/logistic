@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Logistic</title>
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!--css owl carousel-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/owl.theme.green.min.css" rel="stylesheet">
+
+    <!--css style-->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--HEADER START-->
+<div class="container">
+    <header>
+        <nav class="header-logistic-page clearfix">
+            <div class="box-menu">
+                <ul class="main-menu">
+                    <li>
+                        <a href="#" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#">Service</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#">International transport</a>
+                            </li>
+                            <li>
+                                <a href="#">Shipping line agency</a>
+                            </li>
+                            <li>
+                                <a href="#">Container line agency</a>
+                                <ul class="sub-sub-menu">
+                                    <li>
+                                        <a href="#">Seaway</a>
+                                    </li>
+                                    <li><a href="#">Airway</a></li>
+                                    <li><a href="#">Mixed Trasnportation</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Shipping line agency</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Recrument</a>
+                    </li>
+                    <li>
+                        <a href="#">Useful tool</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="logo-logistic pull-left">
+                <a href="#"><img src="images/logo-logistic.png" alt="logo-logistic"></a>
+            </div>
+            <div class="pull-right">
+                <div class="search-box">
+                    <div class="search clearfix">
+                        <input class="search-input" type="text" placeholder="Enter words here...">
+                        <a class="btn-search" href="#">
+                            <i class="ico-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <ul class="language-selecter">
+                    <li class="active">
+                        <a class="spain" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="vn" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="eng active" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/img-slider.jpg" alt="...">
+                    <div class="carousel-caption">
+                        IN FORWARDING <br>
+                        we BRING your MERCHANDISES <br>
+                        to THE WHOLE WORLD
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/img-slider.jpg" alt="...">
+                    <div class="carousel-caption">
+                        IN FORWARDING <br>
+                        we BRING your MERCHANDISES <br>
+                        to THE WHOLE WORLD
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </header>
+<!--HEADER end-->
+<!--Container -->
+    <main>
+        <!--TAB PANEL START-->
+        <div class="box-tab-panel">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs control-tab-panel-home" role="tablist">
+                <li role="presentation">
+                    <a href="#trading" aria-controls="trading" role="tab" data-toggle="tab">Trading</a>
+                </li>
+                <li role="presentation" class="active">
+                    <a href="#forwarding" aria-controls="forwarding" role="tab" data-toggle="tab">Forwarding</a>
+                </li>
+                <li role="presentation">
+                    <a href="#transport" aria-controls="transport" role="tab" data-toggle="tab">Transport</a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content tab-panel-home">
+                <div role="tabpanel" class="tab-pane active" id="trading">
+                    <img src="images/img-forwarding.jpg" alt="">
+                </div>
+                <div role="tabpanel" class="tab-pane" id="forwarding">
+                    <img src="images/img-slider.jpg" alt="">
+                </div>
+                <div role="tabpanel" class="tab-pane" id="transport">
+                    <img src="images/img-forwarding.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!--TAB PANEL END-->
+
+        <!--ABOUT US START-->
+        <div id="about-us" class="about-us">
+            <div class="title-about">ABOUT US</div>
+            <div class="content-about">
+                P&N Logistics Co., Ltd. (PNL) located in Hochiminh city, Vietnam offering full range of Shipping Line/ Container Line/ NVOCC Agency/ Ship Chatering/ Brokering/ Airlines GSA/CSA and Global Logistics/ Freight Forwarding to Singapore, Malaysia, Thailand, SEA countries, China, Intra Asia, America, Africa, Europe and the rest of the world.
+            </div>
+
+            <!--slider about us-->
+            <div class="box-transport clearfix">
+                <div class="item-transport">
+                    <img src="images/img-plant.jpg" alt="">
+                    <div class="title-center">
+                        SHIPPING LINE AGENCY
+                    </div>
+                    <div class="content-hover">
+                        <div class="title">
+                            INTERNATIONAL
+                            TRANSPORT
+                        </div>
+                        <div class="content">
+                            Through our worldwide agent network, we can collect your cargo at any overseas places, then ship by air or sea to Vietnam
+                        </div>
+                        <div class="btn-view-more"><a href="#">More</a></div>
+                    </div>
+                </div>
+                <div class="item-transport">
+                    <img src="images/img-ship.jpg" alt="">
+                    <div class="title-center">
+                        SHIPPING LINE AGENCY
+                    </div>
+                    <div class="content-hover">
+                        <div class="title">
+                            INTERNATIONAL
+                            TRANSPORT
+                        </div>
+                        <div class="content">
+                            Through our worldwide agent network, we can collect your cargo at any overseas places, then ship by air or sea to Vietnam
+                        </div>
+                        <div class="btn-view-more"><a href="#">More</a></div>
+                    </div>
+                </div>
+                <div class="item-transport">
+                    <img src="images/img-trans.jpg" alt="">
+                    <div class="title-center">
+                        CONTAINER LINE
+                        AGENCY
+                    </div>
+                    <div class="content-hover">
+                        <div class="title">
+                            INTERNATIONAL
+                            TRANSPORT
+                        </div>
+                        <div class="content">
+                            Through our worldwide agent network, we can collect your cargo at any overseas places, then ship by air or sea to Vietnam
+                        </div>
+                        <div class="btn-view-more"><a href="#">More</a></div>
+                    </div>
+                </div>
+                <div class="item-transport">
+                    <img src="images/img-container.jpg" alt="">
+                    <div class="title-center">
+                        WAREHOUSING
+                    </div>
+                    <div class="content-hover">
+                        <div class="title">
+                            INTERNATIONAL
+                            TRANSPORT
+                        </div>
+                        <div class="content">
+                            Through our worldwide agent network, we can collect your cargo at any overseas places, then ship by air or sea to Vietnam
+                        </div>
+                        <div class="btn-view-more"><a href="#">More</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ABOUT US END-->
+
+        <!--CHOOSE US START-->
+        <div id="choose-us" class="choose-us">
+            <div class="title-choose-us">
+                WHY SHOULD YOU CHOOSE US ?
+            </div>
+            <div class="content-choose-us">
+                Our Company's success is based on its management's extensive knowledge and nearly 20 years experience in shipping/ aviation/ logistics/ freight forwarding industries
+            </div>
+            <div class="box-choose-us clearfix">
+                <div class="item-choose">
+                    <img src="images/service-icon.png" alt="">
+                    <div class="name-choose"><a href="#">VARIETY SERVICES</a></div>
+                </div>
+                <div class="item-choose">
+                    <img src="images/coin-icon.png" alt="">
+                    <div class="name-choose"><a href="#">COST SAVING</a></div>
+                </div>
+                <div class="item-choose">
+                    <img src="images/hand-icon.png" alt="">
+                    <div class="name-choose"><a href="#">STRONG BELIEVE</a></div>
+                </div>
+                <div class="item-choose">
+                    <img src="images/trend-icon.png" alt="">
+                    <div class="name-choose"><a href="#">DEVELOPMENT</a></div>
+                </div>
+            </div>
+
+        </div>
+        <!--CHOOSE US END-->
+
+        <!--EVENT AND NEWS START-->
+        <div id="event-news" class="event-news">
+            <div class="box-title">
+                <div class="title">
+                    EVENT AND NEWS
+                </div>
+            </div>
+            <div class="box-event-news clearfix">
+                <div class="owl-carousel owl-theme slider-event-news">
+                    <div class="item-event-news item">
+                        <a href="#">
+                            <img src="images/event1.jpeg" alt="">
+                            <div class="label-event">
+                                P & N Logistics is launching the combo package for loyal customers.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-event-news odd item">
+                        <a href="#">
+                            <img src="images/event2.jpg" alt="">
+                            <div class="label-event">
+                                P & N Logistics is launching the combo package for loyal customers.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-event-news item">
+                        <a href="#">
+                            <img src="images/event3.jpg" alt="">
+                            <div class="label-event">
+                                P & N Logistics is launching the combo package for loyal customers.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-event-news odd item">
+                        <a href="#">
+                            <img src="images/event1.jpeg" alt="">
+                            <div class="label-event">
+                                P & N Logistics is launching the combo package for loyal customers.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-event-news item">
+                        <a href="#">
+                            <img src="images/event2.jpg" alt="">
+                            <div class="label-event">
+                                P & N Logistics is launching the combo package for loyal customers.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item-event-news odd item">
+                        <a href="#">
+                            <img src="images/event3.jpg" alt="">
+                            <div class="label-event">
+                                P & N Logistics is launching the combo package for loyal customers.
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--EVENT AND NEWS END-->
+
+        <!--PARTNERS START-->
+        <div id="partners" class="partners">
+            <div class="title-partners">PARTNERS</div>
+
+            <div class="box-logo-partner clearfix">
+                <!--<div class="owl-carousel owl-theme slider-partners">-->
+                    <div class="item-partner item">
+                    <a class="one" href="#">
+                        <img src="images/logo1.png" alt="">
+                    </a>
+                    <a class="two" href="#">
+                        <img src="images/logo5.png" alt="">
+                    </a>
+                </div>
+                    <div class="item-partner item">
+                        <a class="one" href="#">
+                            <img src="images/logo2.png" alt="">
+                        </a>
+                        <a class="two" href="#">
+                            <img src="images/logo3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item-partner item">
+                        <a class="one" href="#">
+                            <img src="images/logo3.png" alt="">
+                        </a>
+                        <a class="two" href="#">
+                            <img src="images/logo1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item-partner item">
+                        <a class="one" href="#">
+                            <img src="images/logo4.png" alt="">
+                        </a>
+                        <a class="two" href="#">
+                            <img src="images/logo3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item-partner item">
+                        <a class="one" href="#">
+                            <img src="images/logo5.png" alt="">
+                        </a>
+                        <a class="two" href="#">
+                            <img src="images/logo1.png" alt="">
+                        </a>
+                    </div>
+                <!--</div>-->
+            </div>
+        </div>
+        <!--PARTNERS END-->
+
+    </main>
+<!--Container end -->
+    <footer>
+        <div class="title-office">
+            OFFFICE & BRANCHES
+        </div>
+        <div class="box-offices clearfix">
+            <div class="item-office office-1">
+                <div class="title">
+                    Hochiminh city, Vietnam Head Office
+                    P&N Logistics Co.,Ltd. (PNL)
+                </div>
+                <div class="content">
+                    No. 25 Road 45, Dist.4, Hochiminh city, Vietnam. <br>
+                    Tel: 84-8-39410176    Fax: 84-8-39408224.<br>
+                    Email: info@pnlogistics.com.vn; <br>
+                    mgt@pnlogistics.com.vn;
+                </div>
+            </div>
+            <div class="item-office office-2">
+                <div class="title">
+                    Hochiminh city, Vietnam Head Office
+                    P&N Logistics Co.,Ltd. (PNL)
+                </div>
+                <div class="content">
+                    No. 25 Road 45, Dist.4, Hochiminh city, Vietnam. <br>
+                    Tel: 84-8-39410176    Fax: 84-8-39408224.<br>
+                    Email: info@pnlogistics.com.vn; <br>
+                    mgt@pnlogistics.com.vn;
+                </div>
+            </div>
+            <div class="item-office office-3">
+                <div class="title">
+                    Hochiminh city, Vietnam Head Office
+                    P&N Logistics Co.,Ltd. (PNL)
+                </div>
+                <div class="content">
+                    No. 25 Road 45, Dist.4, Hochiminh city, Vietnam. <br>
+                    Tel: 84-8-39410176    Fax: 84-8-39408224.<br>
+                    Email: info@pnlogistics.com.vn; <br>
+                    mgt@pnlogistics.com.vn;
+                </div>
+            </div>
+            <div class="item-office office-4">
+                <div class="title">
+                    Hochiminh city, Vietnam Head Office
+                    P&N Logistics Co.,Ltd. (PNL)
+                </div>
+                <div class="content">
+                    No. 25 Road 45, Dist.4, Hochiminh city, Vietnam. <br>
+                    Tel: 84-8-39410176    Fax: 84-8-39408224.<br>
+                    Email: info@pnlogistics.com.vn; <br>
+                    mgt@pnlogistics.com.vn;
+                </div>
+            </div>
+        </div>
+        <div class="box-copyright">
+            <div class="text-copyright">
+                Copyright © 2017 P&N Logistics. All rights reserved
+            </div>
+            <div class="box-hotline">
+                HOTLINE: 84.XXX.XX
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!--js owl carousel-->
+<script src="js/owl.carousel.min.js"></script>
+
+
+<script>
+    $('.slider-partners').owlCarousel({
+        loop:true,
+        nav:true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause:true,
+        stagePadding: 0,
+        navText: ['<i class="btn-prev"></i>','<i class="btn-next"></i>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            992:{
+                items:4
+            },
+            1200:{
+                items:5
+            }
+        }
+    })
+    $('.slider-event-news').owlCarousel({
+        loop:true,
+        nav:true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause:true,
+        stagePadding: 0,
+        navText: ['<i class="btn-prev"></i>','<i class="btn-next"></i>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+</script>
+</body>
+</html>
