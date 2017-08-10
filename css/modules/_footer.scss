@@ -19,6 +19,10 @@ footer{
       float: left;
       margin: 25px;
       padding: 20px;
+      transition: 0.3s;
+      &:hover{
+        background: $color-input-btn;
+      }
     }
     .office-1{
       margin-left: 100px;

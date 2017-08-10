@@ -17,14 +17,15 @@
     width:80%;
     margin: auto;
     .item-partner{
-      width: 182px;
       display: block;
-      float: left;
       text-align: center;
+      margin-bottom: 30px;
       >a{
         img{
           max-width: 182px;
           max-height: 95px;
+          width: 50%;
+          margin: auto;
         }
       }
       a.one{

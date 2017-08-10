@@ -3,36 +3,208 @@
     display: block;
   }
   header {
-    nav.header-logistic-page {
+      nav.header-logistic-page {
+      .logo-logistic {
+        a {
+          img {
+            height: 40px;
+          }
+        }
+      }
+      .box-menu{
+        width: 70px;
+        float: left;
+        img{
+          width: 40px;
+          padding-top: 8px;
+        }
+      }
       .pull-right{
         float: none !important;
+      }
+      .pull-left{
+        float: left!important;
+        width: calc(100% - 120px);
+        text-align: center;
       }
 
       .btn-menu-mobile{
         display: block;
+        cursor: pointer;
       }
       ul.main-menu {
         display: none;
+        top: 100%;
+        left: 0;
+        width: 300px;
+        background: rgba(33,78,103,0.9);
+        @include translate-x(0);
+        >li{
+          float: none;
+          text-align: center;
+          >a{
+            width: 100%;
+          }
+          .language-selecter-mobile{
+            margin: 10px;
+            >li{
+              display: inline-block;
+            }
+            .spain{
+              background: url("../images/spain-flag-icon.png") center no-repeat;
+              width: 50px;
+              height: 30px;
+            }
+            .vn{
+              background: url("../images/vn-flag-icon.png") center no-repeat;
+              width: 50px;
+              height: 30px;
+            }
+            .eng{
+              background: url("../images/eng-flag-icon.png") center no-repeat;
+              width: 50px;
+              height: 30px;
+            }
+          }
+        }
         > li:hover{
           ul.sub-menu{
             display: none !important;
           }
         }
+
         }
 
       .search-box {
+        width: 50px;
         .search {
           display: none;
+          position: absolute;
+          top: 100%;
+          right: 10px;
+          z-index: 999;
+          input.search-input{
+            width: 200px;
+          }
+          a.btn-search{
+            display: none;
+          }
         }
         .ico-search-mobile{
           display: block;
+          width: 30px;
+          height: 30px;
+          margin-top: 5px;
+          cursor: pointer;
         }
       }
 
       .language-selecter{
         display: none;
       }
+
       }
     }
+
+
+  /*about us*/
+  #about-us.about-us {
+    .title-about{
+      font-size: 40px;
+      top: -4%;
+    }
+
+  }
+
+  /*choose us*/
+  #choose-us.choose-us{
+    padding: 20px;
+    .title-choose-us {
+      font-size: 29px;
+    }
+
+    .box-choose-us {
+      .item-choose {
+        .name-choose a{
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+
+  /*event news*/
+  #event-news.event-news {
+    .box-event-news {
+      .item-event-news{
+        height: 200px;
+      }
+    }
+  }
+
+}
+
+@include respond-to($break-768){
+  //event news
+  #event-news.event-news {
+    .box-event-news {
+      .item-event-news {
+        .label-event{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+//partners
+  #partners {
+    .title-partners {
+      font-size: 30px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+  }
+
+  //footer
+  footer {
+    .title-office {
+      font-size: 30px;
+      padding: 30px;
+      padding-bottom: 20px;
+    }
+    .box-offices{
+      .item-office{
+        width: calc(100% - 75px);
+        margin: 10px;
+        padding: 10px;
+      .title, .content{
+        font-size: 12px;
+        line-height: 17px;
+      }
+      }
+      .office-1{
+        margin-left: 50px;
+        border-bottom-right-radius: 20px;
+      }
+      .office-2{
+        margin-right: 50px;
+        border-bottom-left-radius: 20px;
+      }
+      .office-3{
+        margin-left: 50px;
+        border-top-right-radius: 20px;
+      }
+      .office-4{
+        margin-right: 50px;
+        border-top-left-radius: 20px;
+      }
+    }
+
+    .box-copyright {
+      .box-hotline{
+        position: static;
+      }
+    }
+  }
 
 }

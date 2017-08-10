@@ -23,10 +23,9 @@
     width: 80%;
     margin: auto;
     .item-event-news{
-      width: 237px;
       float: left;
       display: block;
-      height: 200px;
+      height: 300px;
       padding: 10px;
       margin: 20px;
       position: relative;
@@ -70,37 +69,40 @@
     }
 
 
-    /*slider customer*/
-    .owl-theme {
-      .owl-nav {
-        margin-top: 10px;
-        position: absolute;
-        top: 40%;
-        left: -8%;
-        display: flex;
-        @include justify-content(space-between);
-        width: 116%;
-        [class*=owl-]{
-          background: transparent;
-          padding: 0;
-          margin: 0;
-        }
-      }
+
+  }
+
+}
+/*slider customer*/
+.owl-theme {
+  .owl-nav {
+    margin-top: 10px;
+    position: absolute;
+    top: 40%;
+    left: -8%;
+    display: flex;
+    @include justify-content(space-between);
+    width: 116%;
+    [class*=owl-]{
+      background: transparent;
+      padding: 0;
+      margin: 0;
     }
   }
-  i.btn-next{
-    background: url("../images/btn-next-icon.png") center no-repeat;
-    background-size: 100% 100%;
-    width: 40px;
-    height: 40px;
-    display: block;
-  }
-  i.btn-prev{
-    background: url("../images/btn-next-icon.png") center no-repeat;
-    background-size: 100% 100%;
-    width: 40px;
-    height:40px;
-    display: block;
-    @include rotate(180deg);
-  }
+}
+
+i.btn-next{
+  background: url("../images/btn-next-icon.png") center no-repeat;
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+i.btn-prev{
+  background: url("../images/btn-next-icon.png") center no-repeat;
+  background-size: 100% 100%;
+  width: 40px;
+  height:40px;
+  display: block;
+  @include rotate(180deg);
 }

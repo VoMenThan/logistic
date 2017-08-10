@@ -1,3 +1,10 @@
 @include respond-device($break-768, $break-992){
-
+/*event news*/
+  #event-news.event-news {
+    .box-event-news {
+      .item-event-news{
+        height: 250px;
+      }
+    }
+  }
 }
