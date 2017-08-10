@@ -2,6 +2,9 @@ header{
   background: $color-header;
   font-family: $main;
 
+  .only-show-mobile{
+   display: none;
+  }
   /*nav top*/
   nav.header-logistic-page{
     padding:15px;
@@ -15,7 +18,7 @@ header{
       z-index: 999;
       @include translate-x(-50%);
       display: block;
-      width: 681px;
+      width: 945px;
       a{
         color: #ffffff;
         margin: 0 auto;
@@ -31,7 +34,7 @@ header{
         >a{
           color: #ffffff;
           background: transparent;
-          padding: 10px 20px;
+          padding: 10px 30px;
           text-transform: uppercase;
           border-top: 3px solid #fff;
           transition: .3s;
@@ -59,7 +62,7 @@ header{
            display: block;
            border-top: .1px solid #ffffff;
            padding: 10px;
-           padding-right: 40px;
+           padding-right: 60px;
            &:hover{
              background: $color-input-btn;
            }
@@ -100,7 +103,7 @@ header{
           display: block;
           text-align: left;
           padding: 10px;
-          padding-right: 40px;
+          padding-right: 60px;
           border-top: .1px solid #fff;
           &:hover{
             color: $color-input-btn;
@@ -128,7 +131,7 @@ header{
     .logo-logistic{
       a{
         img{
-          height: 40px;
+          height: 60px;
         }
       }
     }
@@ -136,10 +139,18 @@ header{
     //search box
     .search-box{
       float: left;
+      .ico-search-mobile{
+        width: 40px;
+        height: 40px;
+        display: table;
+        background: url("../images/btn-search-icon.png") center no-repeat;
+        background-size: 80%;
+        display: none;
+      }
       .search{
         input.search-input{
-          height: 40px;
-          width: 200px;
+          height: 50px;
+          width: 300px;
           padding-left: 20px;
           float: left;
           border: none;
@@ -159,8 +170,8 @@ header{
           color: #ffffff;
         }
         a.btn-search{
-          height: 40px;
-          width: 60px;
+          height: 50px;
+          width: 70px;
           background: #eaeaea;
           position: relative;
           float: left;
@@ -170,7 +181,7 @@ header{
             width: 15px;
             height: 15px;
             position: absolute;
-            top: 12px;
+            top: 17px;
             left: -8px;
             background: #eaeaea;
             @include rotate(135deg);
@@ -193,10 +204,10 @@ header{
       padding-left: 30px;
       li{
         float: left;
-        margin: 10px 5px;
+        margin: 15px 5px;
         a{
-          width: 30px;
-          height: 20px;
+          width: 35px;
+          height: 25px;
           display: block;
         }
         a.spain{

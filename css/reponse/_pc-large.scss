@@ -1,3 +1,67 @@
-@include respond-from($break-1200){
+@include respond-device($break-768, $break-1200){
+  header {
+    nav.header-logistic-page {
+      .logo-logistic {
+        a {
+          img{
+            height: 50px;
+          }
+        }
+      }
 
+      .search-box {
+        .search {
+          input.search-input {
+            height: 40px;
+            width: 200px;
+            font-size: 14px;
+          }
+          a.btn-search{
+            width: 60px;
+            height: 40px;
+            &:before{
+              top: 12px;
+            }
+          }
+
+        }
+      }
+
+      ul.language-selecter{
+        li{
+          margin: 9px 5px;
+        }
+      }
+      //menu main
+      .main-menu{
+        width: 620px;
+      > li {
+      > a{
+        font-size: 14px;
+        padding: 10px 15px;
+      }
+      }
+      }
+//sub menu
+      ul.sub-menu {
+      > li {
+      > a{
+        font-size: 14px;
+        padding-right: 50px;
+      }
+      }
+      }
+      //sub sub menu
+      ul.sub-sub-menu {
+      > li {
+      > a{
+        font-size: 14px;
+        padding-right: 50px;
+      }
+      }
+      }
+
+    }
+  }
 }
+

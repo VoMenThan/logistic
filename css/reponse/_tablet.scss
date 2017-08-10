@@ -1,0 +1,38 @@
+@include respond-device($break-425, $break-768){
+  .only-show-mobile{
+    display: block;
+  }
+  header {
+    nav.header-logistic-page {
+      .pull-right{
+        float: none !important;
+      }
+
+      .btn-menu-mobile{
+        display: block;
+      }
+      ul.main-menu {
+        display: none;
+        > li:hover{
+          ul.sub-menu{
+            display: none !important;
+          }
+        }
+        }
+
+      .search-box {
+        .search {
+          display: none;
+        }
+        .ico-search-mobile{
+          display: block;
+        }
+      }
+
+      .language-selecter{
+        display: none;
+      }
+      }
+    }
+
+}
