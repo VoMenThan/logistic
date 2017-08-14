@@ -842,7 +842,7 @@ footer {
           width: 50px;
           height: 30px; }
     header nav.header-logistic-page ul.main-menu > li:hover ul.sub-menu {
-      display: none !important; }
+      display: none; }
   header nav.header-logistic-page .search-box {
     width: 50px; }
     header nav.header-logistic-page .search-box .search {
@@ -970,7 +970,7 @@ footer {
             width: 50px;
             height: 30px; }
       header nav.header-logistic-page ul.main-menu > li:hover ul.sub-menu {
-        display: none !important; }
+        display: none; }
     header nav.header-logistic-page .search-box {
       width: 50px; }
       header nav.header-logistic-page .search-box .search {

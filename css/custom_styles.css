@@ -1,0 +1,6 @@
+@media only screen and (max-width: 768px){
+    header nav.header-logistic-page ul.main-menu > li:hover .sub-menu{
+        display: block !important;
+        position: static;
+    }
+}
